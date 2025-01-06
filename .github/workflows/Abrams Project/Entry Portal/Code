@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>BrickCollectors</h1>
+    <p1
+      >Brick Collectors is a platform for LEGO collectors to value their LEGO
+      collections, Find the best sets to buy, and get updated on LEGO News and
+      Rumors.</p1>
+<br>
+<br>
+    <p2
+      >BrickCollectors is an OpenSorce tool made for a school project. below are
+      links to the websites tools, as well as other projects made by my
+      classmates, the sorce code, and information on open sorce software.</p2>
+  </body>
+  <body> 
+  <br>
+  <br>
+  
+  <a href="https://brickcollectors.neocities.org/Website%20Homepage/Main">
+    <button>Advance to website home page</button>
+  </a>
+  
+  <br>
+  <br>
+  
+  <a href="https://brickcollectors.neocities.org/What%20Does%20Open%20Source%20Mean%3F/WhatDoesOpenSourceMean">
+    <button>What Does Open Source Mean?</button>
+  </a>
+  
+  <br>
+  <br>
+  
+    <a href="https://github.com/AbramJackSparrow/web-development-symposium/tree/main/.github/workflows/Abrams%20Project">
+    <button>Veiw Project sorce code</button>
+    </a>
+  
+  <br>
+  <br>
+  
+  <a href="https://hcis-portal.neocities.org/">
+    <button>Check out projects made by my cassmates</button>
+  </a>
+</html>
