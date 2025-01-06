@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <style>
+      .element {
+        display: inline-block;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+    <script>
+      /* wee dom function from https://www.crockford.com/domjs.html */      
+      function dom(tag, attributes, nodes = []) {                         
+          const node = document.createElement(tag);                   
+          Object.entries(attributes).forEach(function ([k, v]) {
+              node.setAttribute(k, v);
+          });            
+          node.append(...nodes);                        
+          return node;                        
+      }     
+      const data = [   {
+    "setID": ,
+    "number": "",
+    "numberVariant": ,
+    "name": "",
+    "year": ,
+    "theme": "",
+    "themeGroup": "",
+    "subtheme": "",
+    "category": "",
+    "released": ,
+    "pieces": ,
+    "image": {
+      "thumbnailURL": "",
+      "imageURL": ""
+    },
+    "bricksetURL": "",
+    "collection": {
+      "owned": ,
+      "wanted": ,
+      "qtyOwned": ,
+      "rating": ,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": ,
+      "wantedBy": 
+    },
+    "LEGOCom": {
+      "US": {},
+      "UK": {
+        "retailPrice": ,
+        "dateFirstAvailable": "",
+        "dateLastAvailable": ""
+      },
+      "CA": {},
+      "DE": {
+        "retailPrice": ,
+        "dateFirstAvailable": "",
+        "dateLastAvailable": ""
+      }
+    },
+    "rating": ,
+    "reviewCount": ,
+    "packagingType": "",
+    "availability": "",
+    "instructionsCount": ,
+    "additionalImageCount": ,
+    "ageRange": {},
+    "dimensions": {
+      "height": ,
+      "width": ,
+      "depth": 
+    },
+    "barcode": {
+      "EAN": ""
+    },
+    "extendedData": {},
+    "lastUpdated": ""
+  }
+];
+      document.addEventListener("DOMContentLoaded", function(event) {
+        const container = document.getElementById("container");
+        data.forEach(function(elmt) {
+          container.appendChild(
+            dom("div", { class: "element" }, 
+            [elmt.name, elmt.year, elmt.setID])
+          );
+        });
+      });
+    </script>
+  </head>
