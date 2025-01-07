@@ -1,1 +1,74 @@
+<html>
+  <head>
+    <style>
+      .element {
+        display: inline-block;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+    <script>
+      /* wee dom function from https://www.crockford.com/domjs.html */      
+      function dom(tag, attributes, nodes = []) {                         
+          const node = document.createElement(tag);                   
+          Object.entries(attributes).forEach(function ([k, v]) {
+              node.setAttribute(k, v);
+          });            
+          node.append(...nodes);                        
+          return node;                        
+      }     
+      const data = [   {
+ <!COPY AND PASTE INFO FROM BRICKSET API HERE!!!!!!!/!>
+  }
+];
 
+function makeRow (label, value) {
+return dom("tr", {}, [
+                    dom("th", {scope: "row"}, [label]),
+                    dom("td", {}, [value])
+  ]);
+}    
+                    
+      document.addEventListener("DOMContentLoaded", function(event) {
+        const container = document.getElementById("container");
+        data.forEach(function(elmt) {
+          container.appendChild(
+            dom("div", { class: "element" },[
+              dom("img", {src: elmt.image.imageURL, alt:"Image of assembled LEGO set"}),
+              dom("table", {}, [
+                dom("tbody", {}, [
+                  makeRow("Set Name:", elmt.name),
+                  makeRow("Set Price (retail):", elmt.LEGOCom.US.retailPrice ?? "No price available"),
+                  makeRow("Release Year:", elmt.year),
+                  makeRow("Set ID:", elmt.setID) 
+                                  ])
+                                ])
+                              ])
+                             )
+                           })
+                         })
+
+    </script>
+  </head>
+  <table>
+      <tbody>
+        <tr>
+          <th scope="row">Set Name</th>
+          <td>elmt.name</td>
+        </tr>
+        <tr>
+          <th scope="row">Set Price</th>
+          <td>elmt.LEGOCom.US.retailPrice ?? "No price available"</td>
+        </tr>
+        <tr>
+          <th scope="row">Release Year</th>
+          <td>elmt.year</td>
+        </tr>
+        <tr>
+          <th scope="row">Set ID</th>
+          <td>elmt.setID</td>
+        </tr>
+      </tbody>
+  </table>
+</html>
