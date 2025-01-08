@@ -1,0 +1,3321 @@
+<html>
+  <head>
+    <style>
+      .element {
+        display: inline-block;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+    <script>
+      /* wee dom function from https://www.crockford.com/domjs.html */      
+      function dom(tag, attributes, nodes = []) {                         
+          const node = document.createElement(tag);                   
+          Object.entries(attributes).forEach(function ([k, v]) {
+              node.setAttribute(k, v);
+          });            
+          node.append(...nodes);                        
+          return node;                        
+      }     
+      const data = [   {
+    "setID": 29777,
+    "number": "30342",
+    "numberVariant": 1,
+    "name": "Lamborghini HuracÃ¡n Super Trofeo EVO",
+    "year": 2020,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Lamborghini",
+    "category": "Normal",
+    "released": true,
+    "pieces": 70,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/30342-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/30342-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/30342-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 7496,
+      "wantedBy": 1083
+    },
+    "LEGOCom": {
+      "US": {},
+      "UK": {
+        "retailPrice": 3.49,
+        "dateFirstAvailable": "2020-11-05T00:00:00Z",
+        "dateLastAvailable": "2020-12-31T00:00:00Z"
+      },
+      "CA": {},
+      "DE": {
+        "retailPrice": 3.89,
+        "dateFirstAvailable": "2020-11-05T00:00:00Z",
+        "dateLastAvailable": "2021-01-01T00:00:00Z"
+      }
+    },
+    "rating": 3.5,
+    "reviewCount": 2,
+    "packagingType": "Polybag",
+    "availability": "Retail - limited",
+    "instructionsCount": 2,
+    "additionalImageCount": 0,
+    "ageRange": {},
+    "dimensions": {
+      "height": 19.5,
+      "width": 17.0,
+      "depth": 1.0
+    },
+    "barcode": {
+      "EAN": "5702016668742"
+    },
+    "extendedData": {},
+    "lastUpdated": "2022-10-01T05:33:52.057Z"
+  },
+  {
+    "setID": 31053,
+    "number": "30343",
+    "numberVariant": 1,
+    "name": "McLaren Elva",
+    "year": 2021,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "McLaren",
+    "category": "Normal",
+    "released": true,
+    "pieces": 85,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/30343-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/30343-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/30343-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 8683,
+      "wantedBy": 734
+    },
+    "LEGOCom": {
+      "US": {},
+      "UK": {},
+      "CA": {},
+      "DE": {}
+    },
+    "rating": 3.5,
+    "reviewCount": 2,
+    "packagingType": "Polybag",
+    "availability": "LEGO exclusive",
+    "instructionsCount": 2,
+    "additionalImageCount": 1,
+    "ageRange": {},
+    "dimensions": {
+      "height": 19.5,
+      "width": 20.0,
+      "depth": 0.9
+    },
+    "barcode": {
+      "EAN": "5702016912517",
+      "UPC": "673419338936"
+    },
+    "extendedData": {},
+    "lastUpdated": "2021-10-25T18:52:13.257Z"
+  },
+  {
+    "setID": 32510,
+    "number": "30434",
+    "numberVariant": 1,
+    "name": "Aston Martin Valkyrie AMR Pro",
+    "year": 2022,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Aston Martin",
+    "category": "Normal",
+    "released": true,
+    "pieces": 97,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/30434-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/30434-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/30434-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 7063,
+      "wantedBy": 714
+    },
+    "LEGOCom": {
+      "US": {},
+      "UK": {},
+      "CA": {},
+      "DE": {}
+    },
+    "rating": 3.3,
+    "reviewCount": 0,
+    "packagingType": "Polybag",
+    "availability": "LEGO exclusive",
+    "instructionsCount": 2,
+    "additionalImageCount": 1,
+    "ageRange": {},
+    "dimensions": {
+      "height": 19.5,
+      "width": 20.0,
+      "depth": 1.6
+    },
+    "barcode": {
+      "UPC": "673419359016"
+    },
+    "extendedData": {},
+    "lastUpdated": "2023-02-03T11:25:17.66Z"
+  },
+  {
+    "setID": 34545,
+    "number": "30657",
+    "numberVariant": 1,
+    "name": "McLaren Solus GT",
+    "year": 2023,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "McLaren",
+    "category": "Normal",
+    "released": true,
+    "pieces": 95,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/30657-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/30657-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/30657-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 3017,
+      "wantedBy": 562
+    },
+    "LEGOCom": {
+      "US": {},
+      "UK": {},
+      "CA": {},
+      "DE": {}
+    },
+    "rating": 3.7,
+    "reviewCount": 1,
+    "packagingType": "Polybag",
+    "availability": "Retail",
+    "instructionsCount": 2,
+    "additionalImageCount": 1,
+    "ageRange": {},
+    "dimensions": {
+      "height": 19.5,
+      "width": 20.0,
+      "depth": 1.9
+    },
+    "barcode": {
+      "UPC": "673419378321"
+    },
+    "extendedData": {},
+    "lastUpdated": "2023-11-16T21:36:18.807Z"
+  },
+  {
+    "setID": 48314,
+    "number": "30683",
+    "numberVariant": 1,
+    "name": "McLaren Formula 1 Car",
+    "year": 2024,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "McLaren",
+    "category": "Normal",
+    "released": true,
+    "pieces": 58,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/30683-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/30683-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/30683-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 2988,
+      "wantedBy": 781
+    },
+    "LEGOCom": {
+      "US": {},
+      "UK": {},
+      "CA": {},
+      "DE": {}
+    },
+    "rating": 4.3,
+    "reviewCount": 2,
+    "packagingType": "Polybag",
+    "availability": "LEGO exclusive",
+    "instructionsCount": 2,
+    "additionalImageCount": 2,
+    "ageRange": {
+      "min": 7
+    },
+    "dimensions": {
+      "height": 19.5,
+      "width": 17.0,
+      "depth": 1.5
+    },
+    "barcode": {
+      "UPC": "673419391979"
+    },
+    "extendedData": {},
+    "lastUpdated": "2024-09-15T08:22:57.213Z"
+  },
+  {
+    "setID": 30947,
+    "number": "66647",
+    "numberVariant": 1,
+    "name": "Speed Champions Bundle 2 in 1",
+    "year": 2020,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Product Collection",
+    "category": "Collection",
+    "released": true,
+    "pieces": 396,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/66647-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/66647-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/66647-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 188,
+      "wantedBy": 514
+    },
+    "LEGOCom": {
+      "US": {},
+      "UK": {},
+      "CA": {},
+      "DE": {}
+    },
+    "rating": 0.0,
+    "reviewCount": 0,
+    "packagingType": "{Not specified}",
+    "availability": "{Not specified}",
+    "instructionsCount": 0,
+    "additionalImageCount": 0,
+    "ageRange": {},
+    "dimensions": {},
+    "barcode": {},
+    "extendedData": {},
+    "lastUpdated": "2020-10-27T09:13:13.797Z"
+  },
+  {
+    "setID": 50820,
+    "number": "66802",
+    "numberVariant": 1,
+    "name": "Ultimate Formula 1 Collector's Pack",
+    "year": 2025,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Product Collection",
+    "category": "Collection",
+    "released": false,
+    "pieces": 2601,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/66802-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/66802-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/66802-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "wantedBy": 1046
+    },
+    "LEGOCom": {
+      "US": {},
+      "UK": {},
+      "CA": {},
+      "DE": {}
+    },
+    "rating": 0.0,
+    "reviewCount": 0,
+    "packagingType": "Box",
+    "availability": "Retail - limited",
+    "instructionsCount": 0,
+    "additionalImageCount": 1,
+    "ageRange": {
+      "min": 18
+    },
+    "dimensions": {},
+    "barcode": {},
+    "extendedData": {},
+    "lastUpdated": "2024-11-22T10:08:53.833Z"
+  },
+  {
+    "setID": 29491,
+    "number": "76895",
+    "numberVariant": 1,
+    "name": "Ferrari F8 Tributo",
+    "year": 2020,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Ferrari",
+    "category": "Normal",
+    "released": true,
+    "pieces": 275,
+    "minifigs": 1,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76895-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76895-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76895-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 15513,
+      "wantedBy": 2231
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 19.99,
+        "dateFirstAvailable": "2020-01-02T00:00:00Z",
+        "dateLastAvailable": "2021-11-02T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 17.99,
+        "dateFirstAvailable": "2020-01-01T00:00:00Z",
+        "dateLastAvailable": "2021-11-13T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 24.99,
+        "dateFirstAvailable": "2020-01-02T00:00:00Z",
+        "dateLastAvailable": "2021-11-02T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 19.99,
+        "dateFirstAvailable": "2020-01-03T00:00:00Z",
+        "dateLastAvailable": "2021-11-15T00:00:00Z"
+      }
+    },
+    "rating": 4.3,
+    "reviewCount": 9,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 2,
+    "additionalImageCount": 4,
+    "ageRange": {
+      "min": 7
+    },
+    "dimensions": {
+      "height": 13.8,
+      "width": 25.8,
+      "depth": 7.2,
+      "weight": 0.317
+    },
+    "barcode": {
+      "EAN": "5702016618310",
+      "UPC": "673419319089"
+    },
+    "extendedData": {},
+    "lastUpdated": "2020-10-18T07:28:44.737Z"
+  },
+  {
+    "setID": 29492,
+    "number": "76896",
+    "numberVariant": 1,
+    "name": "Nissan GT-R NISMO",
+    "year": 2020,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Nissan",
+    "category": "Normal",
+    "released": true,
+    "pieces": 298,
+    "minifigs": 1,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76896-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76896-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76896-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 11656,
+      "wantedBy": 2047
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 19.99,
+        "dateFirstAvailable": "2020-01-02T00:00:00Z",
+        "dateLastAvailable": "2022-01-16T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 17.99,
+        "dateFirstAvailable": "2020-01-01T00:00:00Z",
+        "dateLastAvailable": "2021-10-27T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 24.99,
+        "dateFirstAvailable": "2020-01-02T00:00:00Z",
+        "dateLastAvailable": "2022-01-16T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 19.99,
+        "dateFirstAvailable": "2020-01-03T00:00:00Z",
+        "dateLastAvailable": "2021-09-22T00:00:00Z"
+      }
+    },
+    "rating": 4.1,
+    "reviewCount": 2,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 2,
+    "additionalImageCount": 4,
+    "ageRange": {
+      "min": 7
+    },
+    "dimensions": {
+      "height": 14.1,
+      "width": 26.2,
+      "depth": 7.2,
+      "weight": 0.34
+    },
+    "barcode": {
+      "EAN": "5702016618327",
+      "UPC": "673419319096"
+    },
+    "extendedData": {},
+    "lastUpdated": "2020-10-18T07:29:12.723Z"
+  },
+  {
+    "setID": 29493,
+    "number": "76897",
+    "numberVariant": 1,
+    "name": "1985 Audi Sport quattro S1",
+    "year": 2020,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Audi",
+    "category": "Normal",
+    "released": true,
+    "pieces": 250,
+    "minifigs": 1,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76897-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76897-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76897-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 12729,
+      "wantedBy": 2242
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 19.99,
+        "dateFirstAvailable": "2020-01-02T00:00:00Z",
+        "dateLastAvailable": "2021-11-12T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 17.99,
+        "dateFirstAvailable": "2020-01-01T00:00:00Z",
+        "dateLastAvailable": "2021-11-02T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 24.99,
+        "dateFirstAvailable": "2020-01-02T00:00:00Z",
+        "dateLastAvailable": "2021-11-12T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 19.99,
+        "dateFirstAvailable": "2020-01-03T00:00:00Z",
+        "dateLastAvailable": "2021-11-15T00:00:00Z"
+      }
+    },
+    "rating": 4.2,
+    "reviewCount": 5,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 2,
+    "additionalImageCount": 4,
+    "ageRange": {
+      "min": 7
+    },
+    "dimensions": {
+      "height": 14.1,
+      "width": 26.2,
+      "depth": 7.2,
+      "weight": 0.31
+    },
+    "barcode": {
+      "EAN": "5702016618334",
+      "UPC": "673419319102"
+    },
+    "extendedData": {},
+    "lastUpdated": "2024-02-26T17:45:06.933Z"
+  },
+  {
+    "setID": 29494,
+    "number": "76898",
+    "numberVariant": 1,
+    "name": "Formula E Panasonic Jaguar Racing GEN2 Car & Jaguar I-PACE eTROPHY",
+    "year": 2020,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Jaguar",
+    "category": "Normal",
+    "released": true,
+    "pieces": 565,
+    "minifigs": 2,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76898-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76898-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76898-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 8592,
+      "wantedBy": 2124
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 29.99,
+        "dateFirstAvailable": "2020-01-02T00:00:00Z",
+        "dateLastAvailable": "2022-01-18T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 34.99,
+        "dateFirstAvailable": "2020-01-01T00:00:00Z",
+        "dateLastAvailable": "2021-11-22T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 39.99,
+        "dateFirstAvailable": "2020-01-02T00:00:00Z",
+        "dateLastAvailable": "2022-01-18T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 39.99,
+        "dateFirstAvailable": "2020-01-03T00:00:00Z",
+        "dateLastAvailable": "2021-11-23T00:00:00Z"
+      }
+    },
+    "rating": 4.0,
+    "reviewCount": 2,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 4,
+    "additionalImageCount": 4,
+    "ageRange": {
+      "min": 8
+    },
+    "dimensions": {
+      "height": 18.0,
+      "width": 35.3,
+      "depth": 8.8,
+      "weight": 0.733
+    },
+    "barcode": {
+      "EAN": "5702016618341",
+      "UPC": "673419319119"
+    },
+    "extendedData": {},
+    "lastUpdated": "2020-03-09T19:34:44.857Z"
+  },
+  {
+    "setID": 29495,
+    "number": "76899",
+    "numberVariant": 1,
+    "name": "Lamborghini Urus ST-X & HuracÃ¡n Super Trofeo EVO ",
+    "year": 2020,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Lamborghini",
+    "category": "Normal",
+    "released": true,
+    "pieces": 663,
+    "minifigs": 2,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76899-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76899-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76899-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 7387,
+      "wantedBy": 2786
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 49.99,
+        "dateFirstAvailable": "2020-01-02T00:00:00Z",
+        "dateLastAvailable": "2021-11-12T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 54.99,
+        "dateFirstAvailable": "2020-01-01T00:00:00Z",
+        "dateLastAvailable": "2021-11-13T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 69.99,
+        "dateFirstAvailable": "2020-01-02T00:00:00Z",
+        "dateLastAvailable": "2021-11-12T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 59.99,
+        "dateFirstAvailable": "2020-01-03T00:00:00Z",
+        "dateLastAvailable": "2021-10-07T00:00:00Z"
+      }
+    },
+    "rating": 4.0,
+    "reviewCount": 1,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 4,
+    "additionalImageCount": 9,
+    "ageRange": {
+      "min": 8
+    },
+    "dimensions": {
+      "height": 26.2,
+      "width": 38.2,
+      "depth": 7.1,
+      "weight": 0.85
+    },
+    "barcode": {
+      "EAN": "5702016618358",
+      "UPC": "673419319126"
+    },
+    "extendedData": {},
+    "lastUpdated": "2019-12-31T17:31:13.357Z"
+  },
+  {
+    "setID": 31330,
+    "number": "76900",
+    "numberVariant": 1,
+    "name": "Koenigsegg Jesko",
+    "year": 2021,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Koenigsegg",
+    "category": "Normal",
+    "released": true,
+    "pieces": 280,
+    "minifigs": 1,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76900-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76900-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76900-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 12418,
+      "wantedBy": 1352
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 19.99,
+        "dateFirstAvailable": "2021-06-05T00:00:00Z",
+        "dateLastAvailable": "2024-03-01T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 19.99,
+        "dateFirstAvailable": "2021-06-05T00:00:00Z",
+        "dateLastAvailable": "2024-01-03T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 29.99,
+        "dateFirstAvailable": "2021-06-05T00:00:00Z",
+        "dateLastAvailable": "2024-03-01T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 24.99,
+        "dateFirstAvailable": "2021-06-02T00:00:00Z",
+        "dateLastAvailable": "2024-01-03T00:00:00Z"
+      }
+    },
+    "rating": 4.2,
+    "reviewCount": 3,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 2,
+    "additionalImageCount": 9,
+    "ageRange": {
+      "min": 7
+    },
+    "dimensions": {
+      "height": 14.1,
+      "width": 26.2,
+      "depth": 7.2
+    },
+    "barcode": {
+      "EAN": "5702016912371",
+      "UPC": "673419338882"
+    },
+    "extendedData": {},
+    "lastUpdated": "2022-06-03T13:08:18.887Z"
+  },
+  {
+    "setID": 31331,
+    "number": "76901",
+    "numberVariant": 1,
+    "name": "Toyota GR Supra",
+    "year": 2021,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Toyota",
+    "category": "Normal",
+    "released": true,
+    "pieces": 299,
+    "minifigs": 1,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76901-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76901-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76901-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 12221,
+      "wantedBy": 1282
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 19.99,
+        "dateFirstAvailable": "2021-06-05T00:00:00Z",
+        "dateLastAvailable": "2024-03-01T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 19.99,
+        "dateFirstAvailable": "2021-06-05T00:00:00Z",
+        "dateLastAvailable": "2024-01-03T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 29.99,
+        "dateFirstAvailable": "2021-06-05T00:00:00Z",
+        "dateLastAvailable": "2024-03-01T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 24.99,
+        "dateFirstAvailable": "2021-06-02T00:00:00Z",
+        "dateLastAvailable": "2024-01-03T00:00:00Z"
+      }
+    },
+    "rating": 4.0,
+    "reviewCount": 2,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 2,
+    "additionalImageCount": 9,
+    "ageRange": {
+      "min": 7
+    },
+    "dimensions": {
+      "height": 14.1,
+      "width": 26.2,
+      "depth": 7.2
+    },
+    "barcode": {
+      "EAN": "5702016912470",
+      "UPC": "673419338899"
+    },
+    "extendedData": {},
+    "lastUpdated": "2021-06-10T22:45:38.28Z"
+  },
+  {
+    "setID": 31332,
+    "number": "76902",
+    "numberVariant": 1,
+    "name": "McLaren Elva",
+    "year": 2021,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "McLaren",
+    "category": "Normal",
+    "released": true,
+    "pieces": 263,
+    "minifigs": 1,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76902-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76902-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76902-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 9017,
+      "wantedBy": 1395
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 19.99,
+        "dateFirstAvailable": "2021-06-05T00:00:00Z",
+        "dateLastAvailable": "2022-12-26T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 17.99,
+        "dateFirstAvailable": "2021-06-05T00:00:00Z",
+        "dateLastAvailable": "2022-11-03T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 24.99,
+        "dateFirstAvailable": "2021-06-05T00:00:00Z",
+        "dateLastAvailable": "2022-12-26T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 19.99,
+        "dateFirstAvailable": "2021-06-02T00:00:00Z",
+        "dateLastAvailable": "2022-11-04T00:00:00Z"
+      }
+    },
+    "rating": 4.0,
+    "reviewCount": 1,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 2,
+    "additionalImageCount": 9,
+    "ageRange": {
+      "min": 7
+    },
+    "dimensions": {
+      "height": 14.1,
+      "width": 26.2,
+      "depth": 7.2
+    },
+    "barcode": {
+      "EAN": "5702016912487",
+      "UPC": "673419338905"
+    },
+    "extendedData": {},
+    "lastUpdated": "2021-06-10T22:45:52.227Z"
+  },
+  {
+    "setID": 31333,
+    "number": "76903",
+    "numberVariant": 1,
+    "name": "Chevrolet Corvette C8.R Race Car and 1968 Chevrolet Corvette",
+    "year": 2021,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Chevrolet",
+    "category": "Normal",
+    "released": true,
+    "pieces": 512,
+    "minifigs": 2,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76903-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76903-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76903-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 10104,
+      "wantedBy": 1924
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 29.99,
+        "dateFirstAvailable": "2021-06-05T00:00:00Z",
+        "dateLastAvailable": "2022-12-01T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 34.99,
+        "dateFirstAvailable": "2021-06-05T00:00:00Z",
+        "dateLastAvailable": "2022-11-14T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 39.99,
+        "dateFirstAvailable": "2021-06-05T00:00:00Z",
+        "dateLastAvailable": "2022-12-01T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 39.99,
+        "dateFirstAvailable": "2021-06-02T00:00:00Z",
+        "dateLastAvailable": "2022-11-15T00:00:00Z"
+      }
+    },
+    "rating": 4.1,
+    "reviewCount": 1,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 4,
+    "additionalImageCount": 10,
+    "ageRange": {
+      "min": 8
+    },
+    "dimensions": {
+      "height": 19.1,
+      "width": 35.4,
+      "depth": 7.0
+    },
+    "barcode": {
+      "EAN": "5702016912494",
+      "UPC": "673419338912"
+    },
+    "extendedData": {},
+    "lastUpdated": "2021-06-10T22:46:15.693Z"
+  },
+  {
+    "setID": 31334,
+    "number": "76904",
+    "numberVariant": 1,
+    "name": "Mopar Dodge//SRT Top Fuel Dragster and 1970 Dodge Challenger T/A",
+    "year": 2021,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Dodge",
+    "category": "Normal",
+    "released": true,
+    "pieces": 627,
+    "minifigs": 2,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76904-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76904-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76904-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 6206,
+      "wantedBy": 1861
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 49.99,
+        "dateFirstAvailable": "2021-06-05T00:00:00Z",
+        "dateLastAvailable": "2023-01-01T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 54.99,
+        "dateFirstAvailable": "2021-06-05T00:00:00Z",
+        "dateLastAvailable": "2022-12-02T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 69.99,
+        "dateFirstAvailable": "2021-06-05T00:00:00Z",
+        "dateLastAvailable": "2023-01-01T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 59.99,
+        "dateFirstAvailable": "2021-06-02T00:00:00Z",
+        "dateLastAvailable": "2022-12-03T00:00:00Z"
+      }
+    },
+    "rating": 4.0,
+    "reviewCount": 0,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 4,
+    "additionalImageCount": 11,
+    "ageRange": {
+      "min": 8
+    },
+    "dimensions": {
+      "height": 26.2,
+      "width": 38.2,
+      "depth": 7.1
+    },
+    "barcode": {
+      "EAN": "5702016912500",
+      "UPC": "673419338929"
+    },
+    "extendedData": {},
+    "lastUpdated": "2021-05-28T00:13:15.097Z"
+  },
+  {
+    "setID": 31335,
+    "number": "76905",
+    "numberVariant": 1,
+    "name": "Ford GT Heritage Edition and Bronco R",
+    "year": 2021,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Ford",
+    "category": "Normal",
+    "released": true,
+    "pieces": 660,
+    "minifigs": 2,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76905-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76905-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76905-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 6645,
+      "wantedBy": 2503
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 49.99,
+        "dateFirstAvailable": "2021-06-10T00:00:00Z",
+        "dateLastAvailable": "2022-12-29T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 44.99,
+        "dateFirstAvailable": "2021-06-05T00:00:00Z",
+        "dateLastAvailable": "2022-08-08T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 69.99,
+        "dateFirstAvailable": "2021-06-10T00:00:00Z",
+        "dateLastAvailable": "2022-12-29T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 49.99,
+        "dateFirstAvailable": "2021-06-02T00:00:00Z",
+        "dateLastAvailable": "2022-08-09T00:00:00Z"
+      }
+    },
+    "rating": 4.4,
+    "reviewCount": 1,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 4,
+    "additionalImageCount": 11,
+    "ageRange": {
+      "min": 8
+    },
+    "dimensions": {
+      "height": 26.2,
+      "width": 38.2,
+      "depth": 7.1
+    },
+    "barcode": {
+      "EAN": "5702016980561",
+      "UPC": "673419345194"
+    },
+    "extendedData": {},
+    "lastUpdated": "2021-06-10T22:46:35.023Z"
+  },
+  {
+    "setID": 32118,
+    "number": "76906",
+    "numberVariant": 1,
+    "name": "1970 Ferrari 512 M",
+    "year": 2022,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Ferrari",
+    "category": "Normal",
+    "released": true,
+    "pieces": 291,
+    "minifigs": 1,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76906-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76906-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76906-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 12819,
+      "wantedBy": 1418
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 19.99,
+        "dateFirstAvailable": "2022-03-01T00:00:00Z",
+        "dateLastAvailable": "2024-12-14T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 19.99,
+        "dateFirstAvailable": "2022-03-01T00:00:00Z",
+        "dateLastAvailable": "2024-11-18T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 29.99,
+        "dateFirstAvailable": "2022-03-01T00:00:00Z",
+        "dateLastAvailable": "2024-12-22T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 24.99,
+        "dateFirstAvailable": "2022-03-02T00:00:00Z",
+        "dateLastAvailable": "2024-11-23T00:00:00Z"
+      }
+    },
+    "rating": 4.3,
+    "reviewCount": 2,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 2,
+    "additionalImageCount": 7,
+    "ageRange": {},
+    "dimensions": {
+      "height": 14.1,
+      "width": 26.2,
+      "depth": 7.2
+    },
+    "barcode": {
+      "EAN": "5702017119045",
+      "UPC": "673419353663"
+    },
+    "extendedData": {},
+    "lastUpdated": "2022-02-28T18:01:01.15Z"
+  },
+  {
+    "setID": 32119,
+    "number": "76907",
+    "numberVariant": 1,
+    "name": "Lotus Evija",
+    "year": 2022,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Lotus",
+    "category": "Normal",
+    "released": true,
+    "pieces": 247,
+    "minifigs": 1,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76907-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76907-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76907-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 11494,
+      "wantedBy": 1364
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 19.99,
+        "dateFirstAvailable": "2022-03-01T00:00:00Z",
+        "dateLastAvailable": "2024-12-07T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 19.99,
+        "dateFirstAvailable": "2022-03-01T00:00:00Z",
+        "dateLastAvailable": "2024-11-04T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 29.99,
+        "dateFirstAvailable": "2022-03-01T00:00:00Z",
+        "dateLastAvailable": "2024-12-06T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 24.99,
+        "dateFirstAvailable": "2022-03-02T00:00:00Z",
+        "dateLastAvailable": "2024-11-22T00:00:00Z"
+      }
+    },
+    "rating": 4.0,
+    "reviewCount": 4,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 2,
+    "additionalImageCount": 7,
+    "ageRange": {},
+    "dimensions": {
+      "height": 14.1,
+      "width": 26.2,
+      "depth": 7.2
+    },
+    "barcode": {
+      "EAN": "5702017156712",
+      "UPC": "673419358729"
+    },
+    "extendedData": {},
+    "lastUpdated": "2022-02-28T18:01:03.123Z"
+  },
+  {
+    "setID": 32120,
+    "number": "76908",
+    "numberVariant": 1,
+    "name": "Lamborghini Countach",
+    "year": 2022,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Lamborghini",
+    "category": "Normal",
+    "released": true,
+    "pieces": 262,
+    "minifigs": 1,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76908-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76908-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76908-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 17316,
+      "wantedBy": 1660
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 19.99,
+        "dateFirstAvailable": "2022-03-01T00:00:00Z",
+        "dateLastAvailable": "2024-12-14T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 19.99,
+        "dateFirstAvailable": "2022-03-01T00:00:00Z",
+        "dateLastAvailable": "2024-11-21T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 29.99,
+        "dateFirstAvailable": "2022-03-01T00:00:00Z",
+        "dateLastAvailable": "2024-12-14T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 24.99,
+        "dateFirstAvailable": "2022-03-02T00:00:00Z",
+        "dateLastAvailable": "2024-11-08T00:00:00Z"
+      }
+    },
+    "rating": 4.4,
+    "reviewCount": 6,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 2,
+    "additionalImageCount": 7,
+    "ageRange": {},
+    "dimensions": {
+      "height": 14.1,
+      "width": 26.2,
+      "depth": 7.2
+    },
+    "barcode": {
+      "EAN": "5702017156729",
+      "UPC": "673419358736"
+    },
+    "extendedData": {},
+    "lastUpdated": "2022-02-28T18:01:05.207Z"
+  },
+  {
+    "setID": 32121,
+    "number": "76909",
+    "numberVariant": 1,
+    "name": "Mercedes-AMG F1 W12 E Performance & Mercedes-AMG Project One",
+    "year": 2022,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Mercedes",
+    "category": "Normal",
+    "released": true,
+    "pieces": 564,
+    "minifigs": 2,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76909-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76909-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76909-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 10714,
+      "wantedBy": 1851
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 34.99,
+        "dateFirstAvailable": "2022-03-01T00:00:00Z",
+        "dateLastAvailable": "2024-12-14T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 39.99,
+        "dateFirstAvailable": "2022-03-01T00:00:00Z",
+        "dateLastAvailable": "2024-11-23T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 44.99,
+        "dateFirstAvailable": "2022-03-01T00:00:00Z",
+        "dateLastAvailable": "2024-12-14T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 44.99,
+        "dateFirstAvailable": "2022-03-02T00:00:00Z",
+        "dateLastAvailable": "2024-11-28T00:00:00Z"
+      }
+    },
+    "rating": 4.3,
+    "reviewCount": 1,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 4,
+    "additionalImageCount": 9,
+    "ageRange": {},
+    "dimensions": {
+      "height": 19.1,
+      "width": 35.4,
+      "depth": 7.0
+    },
+    "barcode": {
+      "EAN": "5702017160825",
+      "UPC": "673419358989"
+    },
+    "extendedData": {},
+    "lastUpdated": "2022-02-28T18:01:07.583Z"
+  },
+  {
+    "setID": 32122,
+    "number": "76910",
+    "numberVariant": 1,
+    "name": "Aston Martin Valkyrie AMR Pro and Aston Martin Vantage GT3",
+    "year": 2022,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Aston Martin",
+    "category": "Normal",
+    "released": true,
+    "pieces": 592,
+    "minifigs": 2,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76910-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76910-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76910-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 8103,
+      "wantedBy": 1535
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 44.99,
+        "dateFirstAvailable": "2022-03-01T00:00:00Z",
+        "dateLastAvailable": "2024-02-05T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 39.99,
+        "dateFirstAvailable": "2022-03-01T00:00:00Z",
+        "dateLastAvailable": "2024-01-03T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 59.99,
+        "dateFirstAvailable": "2022-03-01T00:00:00Z",
+        "dateLastAvailable": "2024-02-05T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 44.99,
+        "dateFirstAvailable": "2022-03-02T00:00:00Z",
+        "dateLastAvailable": "2024-01-03T00:00:00Z"
+      }
+    },
+    "rating": 4.1,
+    "reviewCount": 4,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 4,
+    "additionalImageCount": 8,
+    "ageRange": {},
+    "dimensions": {
+      "height": 19.1,
+      "width": 35.4,
+      "depth": 7.0
+    },
+    "barcode": {
+      "EAN": "5702017160849",
+      "UPC": "673419358996"
+    },
+    "extendedData": {},
+    "lastUpdated": "2022-02-28T18:01:10.31Z"
+  },
+  {
+    "setID": 33652,
+    "number": "76911",
+    "numberVariant": 1,
+    "name": "007 Aston Martin DB5",
+    "year": 2022,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Aston Martin",
+    "category": "Normal",
+    "released": true,
+    "pieces": 298,
+    "minifigs": 1,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76911-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76911-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76911-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 19121,
+      "wantedBy": 1721
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 19.99,
+        "dateFirstAvailable": "2022-07-26T00:00:00Z",
+        "dateLastAvailable": "2024-03-01T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 19.99,
+        "dateFirstAvailable": "2022-07-26T00:00:00Z",
+        "dateLastAvailable": "2024-01-03T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 29.99,
+        "dateFirstAvailable": "2022-07-26T00:00:00Z",
+        "dateLastAvailable": "2024-03-01T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 24.99,
+        "dateFirstAvailable": "2022-08-04T00:00:00Z",
+        "dateLastAvailable": "2024-01-03T00:00:00Z"
+      }
+    },
+    "rating": 4.4,
+    "reviewCount": 4,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 2,
+    "additionalImageCount": 8,
+    "ageRange": {
+      "min": 8
+    },
+    "dimensions": {
+      "height": 14.1,
+      "width": 26.2,
+      "depth": 6.1
+    },
+    "barcode": {
+      "EAN": "5702017231044",
+      "UPC": "673419364027"
+    },
+    "extendedData": {},
+    "lastUpdated": "2022-07-07T19:29:15.3Z"
+  },
+  {
+    "setID": 33651,
+    "number": "76912",
+    "numberVariant": 1,
+    "name": "Fast & Furious 1970 Dodge Charger R/T",
+    "year": 2022,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Dodge",
+    "category": "Normal",
+    "released": true,
+    "pieces": 345,
+    "minifigs": 1,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76912-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76912-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76912-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 12890,
+      "wantedBy": 1643
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 19.99,
+        "dateFirstAvailable": "2022-07-26T00:00:00Z",
+        "dateLastAvailable": "2024-03-01T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 19.99,
+        "dateFirstAvailable": "2022-07-26T00:00:00Z",
+        "dateLastAvailable": "2024-01-03T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 29.99,
+        "dateFirstAvailable": "2022-07-26T00:00:00Z",
+        "dateLastAvailable": "2024-03-01T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 24.99,
+        "dateFirstAvailable": "2022-08-04T00:00:00Z",
+        "dateLastAvailable": "2024-01-03T00:00:00Z"
+      }
+    },
+    "rating": 4.2,
+    "reviewCount": 1,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 2,
+    "additionalImageCount": 9,
+    "ageRange": {
+      "min": 8
+    },
+    "dimensions": {
+      "height": 14.1,
+      "width": 26.2,
+      "depth": 6.1
+    },
+    "barcode": {
+      "EAN": "5702017234410",
+      "UPC": "673419364768"
+    },
+    "extendedData": {},
+    "lastUpdated": "2022-07-03T01:21:15.19Z"
+  },
+  {
+    "setID": 34406,
+    "number": "76914",
+    "numberVariant": 1,
+    "name": "Ferrari 812 Competizione",
+    "year": 2023,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Ferrari",
+    "category": "Normal",
+    "released": true,
+    "pieces": 261,
+    "minifigs": 1,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76914-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76914-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76914-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 8696,
+      "wantedBy": 1303
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 24.99,
+        "dateFirstAvailable": "2023-01-03T00:00:00Z",
+        "dateLastAvailable": "2024-12-12T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 19.99,
+        "dateFirstAvailable": "2023-01-04T00:00:00Z",
+        "dateLastAvailable": "2024-11-23T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 29.99,
+        "dateFirstAvailable": "2023-01-03T00:00:00Z",
+        "dateLastAvailable": "2024-12-11T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 24.99,
+        "dateFirstAvailable": "2023-01-04T00:00:00Z",
+        "dateLastAvailable": "2024-11-23T00:00:00Z"
+      }
+    },
+    "rating": 4.3,
+    "reviewCount": 1,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 4,
+    "additionalImageCount": 8,
+    "ageRange": {
+      "min": 9
+    },
+    "dimensions": {
+      "height": 14.1,
+      "width": 26.2,
+      "depth": 7.2
+    },
+    "barcode": {
+      "EAN": "5702017424187",
+      "UPC": "673419378635"
+    },
+    "extendedData": {},
+    "lastUpdated": "2023-01-05T14:20:31.697Z"
+  },
+  {
+    "setID": 34407,
+    "number": "76915",
+    "numberVariant": 1,
+    "name": "Pagani Utopia",
+    "year": 2023,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Pagani",
+    "category": "Normal",
+    "released": true,
+    "pieces": 249,
+    "minifigs": 1,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76915-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76915-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76915-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 8369,
+      "wantedBy": 1456
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 24.99,
+        "dateFirstAvailable": "2023-01-03T00:00:00Z",
+        "dateLastAvailable": "2024-12-10T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 19.99,
+        "dateFirstAvailable": "2023-01-04T00:00:00Z",
+        "dateLastAvailable": "2024-10-17T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 29.99,
+        "dateFirstAvailable": "2023-01-03T00:00:00Z",
+        "dateLastAvailable": "2024-12-09T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 24.99,
+        "dateFirstAvailable": "2023-01-04T00:00:00Z",
+        "dateLastAvailable": "2024-11-28T00:00:00Z"
+      }
+    },
+    "rating": 4.2,
+    "reviewCount": 3,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 3,
+    "additionalImageCount": 7,
+    "ageRange": {
+      "min": 9
+    },
+    "dimensions": {
+      "height": 14.1,
+      "width": 26.2,
+      "depth": 7.2
+    },
+    "barcode": {
+      "EAN": "5702017424194",
+      "UPC": "673419378642"
+    },
+    "extendedData": {},
+    "lastUpdated": "2023-01-05T14:22:21.67Z"
+  },
+  {
+    "setID": 34408,
+    "number": "76916",
+    "numberVariant": 1,
+    "name": "Porsche 963",
+    "year": 2023,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Porsche",
+    "category": "Normal",
+    "released": true,
+    "pieces": 280,
+    "minifigs": 1,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76916-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76916-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76916-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 7973,
+      "wantedBy": 1241
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 24.99,
+        "dateFirstAvailable": "2023-01-03T00:00:00Z",
+        "dateLastAvailable": "2024-12-10T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 19.99,
+        "dateFirstAvailable": "2023-01-04T00:00:00Z",
+        "dateLastAvailable": "2024-10-18T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 29.99,
+        "dateFirstAvailable": "2023-01-03T00:00:00Z",
+        "dateLastAvailable": "2024-12-10T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 24.99,
+        "dateFirstAvailable": "2023-01-06T00:00:00Z",
+        "dateLastAvailable": "2024-12-09T00:00:00Z"
+      }
+    },
+    "rating": 4.1,
+    "reviewCount": 0,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 3,
+    "additionalImageCount": 6,
+    "ageRange": {
+      "min": 9
+    },
+    "dimensions": {
+      "height": 14.1,
+      "width": 26.2,
+      "depth": 7.2
+    },
+    "barcode": {
+      "EAN": "5702017424200",
+      "UPC": "673419378659"
+    },
+    "extendedData": {},
+    "lastUpdated": "2023-01-05T14:23:07.04Z"
+  },
+  {
+    "setID": 34319,
+    "number": "76917",
+    "numberVariant": 1,
+    "name": "2 Fast 2 Furious Nissan Skyline GT-R (R34)",
+    "year": 2023,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Nissan",
+    "category": "Normal",
+    "released": true,
+    "pieces": 319,
+    "minifigs": 1,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76917-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76917-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76917-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 12870,
+      "wantedBy": 1634
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 24.99,
+        "dateFirstAvailable": "2022-12-09T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 19.99,
+        "dateFirstAvailable": "2022-12-09T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 29.99,
+        "dateFirstAvailable": "2022-12-09T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 24.99,
+        "dateFirstAvailable": "2022-12-12T00:00:00Z"
+      }
+    },
+    "rating": 4.3,
+    "reviewCount": 5,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 3,
+    "additionalImageCount": 8,
+    "ageRange": {
+      "min": 9
+    },
+    "dimensions": {
+      "height": 14.1,
+      "width": 26.2,
+      "depth": 7.2
+    },
+    "barcode": {
+      "EAN": "5702017424217",
+      "UPC": "673419378666"
+    },
+    "extendedData": {},
+    "lastUpdated": "2022-12-10T07:51:40.94Z"
+  },
+  {
+    "setID": 34409,
+    "number": "76918",
+    "numberVariant": 1,
+    "name": "McLaren Solus GT & McLaren F1 LM",
+    "year": 2023,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "McLaren",
+    "category": "Normal",
+    "released": true,
+    "pieces": 581,
+    "minifigs": 2,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76918-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76918-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76918-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 7818,
+      "wantedBy": 1482
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 34.99,
+        "dateFirstAvailable": "2023-01-03T00:00:00Z",
+        "dateLastAvailable": "2024-11-29T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 39.99,
+        "dateFirstAvailable": "2023-01-04T00:00:00Z",
+        "dateLastAvailable": "2024-11-28T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 44.99,
+        "dateFirstAvailable": "2023-01-03T00:00:00Z",
+        "dateLastAvailable": "2024-11-29T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 44.99,
+        "dateFirstAvailable": "2023-01-04T00:00:00Z",
+        "dateLastAvailable": "2024-11-28T00:00:00Z"
+      }
+    },
+    "rating": 4.3,
+    "reviewCount": 3,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 5,
+    "additionalImageCount": 8,
+    "ageRange": {
+      "min": 9
+    },
+    "dimensions": {
+      "height": 19.1,
+      "width": 35.4,
+      "depth": 7.0
+    },
+    "barcode": {
+      "EAN": "5702017424224",
+      "UPC": "673419378673"
+    },
+    "extendedData": {},
+    "lastUpdated": "2023-01-08T16:40:06.933Z"
+  },
+  {
+    "setID": 48514,
+    "number": "76919",
+    "numberVariant": 1,
+    "name": "2023 McLaren Formula 1 Car",
+    "year": 2024,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "McLaren",
+    "category": "Normal",
+    "released": true,
+    "pieces": 245,
+    "minifigs": 1,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76919-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76919-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76919-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 6420,
+      "wantedBy": 1391
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2024-02-02T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 20.99,
+        "dateFirstAvailable": "2024-02-02T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 34.99,
+        "dateFirstAvailable": "2024-02-02T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2024-02-02T00:00:00Z"
+      }
+    },
+    "rating": 4.3,
+    "reviewCount": 5,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 2,
+    "additionalImageCount": 8,
+    "ageRange": {
+      "min": 9
+    },
+    "dimensions": {
+      "height": 14.1,
+      "width": 26.2,
+      "depth": 7.2
+    },
+    "barcode": {
+      "EAN": "5702017583723",
+      "UPC": "673419389068"
+    },
+    "extendedData": {},
+    "lastUpdated": "2024-02-02T06:16:45.53Z"
+  },
+  {
+    "setID": 48515,
+    "number": "76920",
+    "numberVariant": 1,
+    "name": "Ford Mustang Dark Horse",
+    "year": 2024,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Ford",
+    "category": "Normal",
+    "released": true,
+    "pieces": 344,
+    "minifigs": 1,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76920-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76920-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76920-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 5790,
+      "wantedBy": 1633
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2023-12-02T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 20.99,
+        "dateFirstAvailable": "2023-12-02T00:00:00Z",
+        "dateLastAvailable": "2024-12-14T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 34.99,
+        "dateFirstAvailable": "2023-12-02T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2023-12-02T00:00:00Z"
+      }
+    },
+    "rating": 4.5,
+    "reviewCount": 2,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 2,
+    "additionalImageCount": 2,
+    "ageRange": {
+      "min": 9
+    },
+    "dimensions": {
+      "height": 14.1,
+      "width": 26.2,
+      "depth": 7.2
+    },
+    "barcode": {
+      "EAN": "5702017583730",
+      "UPC": "673419389075"
+    },
+    "extendedData": {},
+    "lastUpdated": "2023-12-01T17:51:06.927Z"
+  },
+  {
+    "setID": 48516,
+    "number": "76921",
+    "numberVariant": 1,
+    "name": "Audi S1 e-tron quattro",
+    "year": 2024,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Audi",
+    "category": "Normal",
+    "released": true,
+    "pieces": 274,
+    "minifigs": 1,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76921-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76921-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76921-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 4633,
+      "wantedBy": 1527
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2023-12-02T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 20.99,
+        "dateFirstAvailable": "2023-12-02T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 34.99,
+        "dateFirstAvailable": "2023-12-02T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2023-12-02T00:00:00Z"
+      }
+    },
+    "rating": 4.2,
+    "reviewCount": 2,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 2,
+    "additionalImageCount": 2,
+    "ageRange": {
+      "min": 9
+    },
+    "dimensions": {
+      "height": 14.1,
+      "width": 26.2,
+      "depth": 7.2
+    },
+    "barcode": {
+      "EAN": "5702017583747",
+      "UPC": "673419389099"
+    },
+    "extendedData": {},
+    "lastUpdated": "2023-12-01T15:15:40.2Z"
+  },
+  {
+    "setID": 48517,
+    "number": "76922",
+    "numberVariant": 1,
+    "name": "BMW M4 GT3 & BMW M Hybrid V8",
+    "year": 2024,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "BMW",
+    "category": "Normal",
+    "released": true,
+    "pieces": 676,
+    "minifigs": 2,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76922-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76922-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76922-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 4078,
+      "wantedBy": 1545
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 44.99,
+        "dateFirstAvailable": "2023-12-02T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 44.99,
+        "dateFirstAvailable": "2023-12-02T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 59.99,
+        "dateFirstAvailable": "2023-12-02T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 49.99,
+        "dateFirstAvailable": "2023-12-02T00:00:00Z"
+      }
+    },
+    "rating": 4.2,
+    "reviewCount": 1,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 4,
+    "additionalImageCount": 2,
+    "ageRange": {
+      "min": 9
+    },
+    "dimensions": {
+      "height": 19.1,
+      "width": 35.4,
+      "depth": 9.1
+    },
+    "barcode": {
+      "EAN": "5702017583754",
+      "UPC": "673419389105"
+    },
+    "extendedData": {},
+    "lastUpdated": "2023-12-01T15:15:33.683Z"
+  },
+  {
+    "setID": 48826,
+    "number": "76923",
+    "numberVariant": 1,
+    "name": "Lamborghini Lambo V12 Vision Gran Turismo",
+    "year": 2024,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Lamborghini",
+    "category": "Normal",
+    "released": true,
+    "pieces": 230,
+    "minifigs": 1,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76923-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76923-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76923-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 3929,
+      "wantedBy": 1574
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2024-05-02T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 20.99,
+        "dateFirstAvailable": "2024-05-02T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 34.99,
+        "dateFirstAvailable": "2024-05-02T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2024-05-02T00:00:00Z"
+      }
+    },
+    "rating": 4.3,
+    "reviewCount": 1,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 2,
+    "additionalImageCount": 9,
+    "ageRange": {
+      "min": 10
+    },
+    "dimensions": {
+      "height": 14.1,
+      "width": 26.2,
+      "depth": 7.2
+    },
+    "barcode": {
+      "EAN": "5702017583761",
+      "UPC": "673419389112"
+    },
+    "extendedData": {},
+    "lastUpdated": "2024-05-01T14:59:30.017Z"
+  },
+  {
+    "setID": 48827,
+    "number": "76924",
+    "numberVariant": 1,
+    "name": "Mercedes-AMG G 63 & Mercedes-AMG SL 63",
+    "year": 2024,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Mercedes",
+    "category": "Normal",
+    "released": true,
+    "pieces": 808,
+    "minifigs": 2,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76924-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76924-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76924-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 4308,
+      "wantedBy": 2002
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 44.99,
+        "dateFirstAvailable": "2024-05-02T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 44.99,
+        "dateFirstAvailable": "2024-05-02T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 59.99,
+        "dateFirstAvailable": "2024-05-02T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 49.99,
+        "dateFirstAvailable": "2024-05-02T00:00:00Z"
+      }
+    },
+    "rating": 4.4,
+    "reviewCount": 1,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 6,
+    "additionalImageCount": 9,
+    "ageRange": {
+      "min": 10
+    },
+    "dimensions": {
+      "height": 19.1,
+      "width": 35.4,
+      "depth": 11.8
+    },
+    "barcode": {
+      "EAN": "5702017583976",
+      "UPC": "673419389129"
+    },
+    "extendedData": {},
+    "lastUpdated": "2024-05-01T15:00:27.623Z"
+  },
+  {
+    "setID": 48828,
+    "number": "76925",
+    "numberVariant": 1,
+    "name": "Aston Martin Vantage Safety Car & AMR23",
+    "year": 2024,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Aston Martin",
+    "category": "Normal",
+    "released": true,
+    "pieces": 564,
+    "minifigs": 2,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76925-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76925-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76925-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 2809,
+      "wantedBy": 2044
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 44.99,
+        "dateFirstAvailable": "2024-05-02T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 44.99,
+        "dateFirstAvailable": "2024-05-02T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 59.99,
+        "dateFirstAvailable": "2024-05-02T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 49.99,
+        "dateFirstAvailable": "2024-05-02T00:00:00Z"
+      }
+    },
+    "rating": 4.5,
+    "reviewCount": 0,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 4,
+    "additionalImageCount": 7,
+    "ageRange": {
+      "min": 9
+    },
+    "dimensions": {
+      "height": 19.1,
+      "width": 35.4,
+      "depth": 7.0
+    },
+    "barcode": {
+      "EAN": "5702017599755",
+      "UPC": "673419394000"
+    },
+    "extendedData": {},
+    "lastUpdated": "2024-05-01T15:01:06.153Z"
+  },
+  {
+    "setID": 49143,
+    "number": "76934",
+    "numberVariant": 1,
+    "name": "Ferrari F40",
+    "year": 2024,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Ferrari",
+    "category": "Normal",
+    "released": true,
+    "pieces": 318,
+    "minifigs": 1,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76934-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76934-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76934-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 4003,
+      "wantedBy": 1869
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2024-07-09T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 20.99,
+        "dateFirstAvailable": "2024-07-09T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 34.99,
+        "dateFirstAvailable": "2024-07-09T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2024-07-09T00:00:00Z"
+      }
+    },
+    "rating": 4.4,
+    "reviewCount": 1,
+    "packagingType": "Box",
+    "availability": "{Not specified}",
+    "instructionsCount": 2,
+    "additionalImageCount": 10,
+    "ageRange": {},
+    "dimensions": {
+      "height": 14.1,
+      "width": 26.2,
+      "depth": 7.2
+    },
+    "barcode": {
+      "EAN": "5702017719702",
+      "UPC": "673419400480"
+    },
+    "extendedData": {},
+    "lastUpdated": "2024-07-08T18:04:00.923Z"
+  },
+  {
+    "setID": 49144,
+    "number": "76935",
+    "numberVariant": 1,
+    "name": "NASCAR Next Gen Chevrolet Camaro ZL1",
+    "year": 2024,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Chevrolet",
+    "category": "Normal",
+    "released": true,
+    "pieces": 328,
+    "minifigs": 1,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/76935-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/76935-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/76935-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 2912,
+      "wantedBy": 1247
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2024-07-09T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 20.99,
+        "dateFirstAvailable": "2024-07-09T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 34.99,
+        "dateFirstAvailable": "2024-07-09T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2024-07-09T00:00:00Z"
+      }
+    },
+    "rating": 4.1,
+    "reviewCount": 0,
+    "packagingType": "Box",
+    "availability": "{Not specified}",
+    "instructionsCount": 2,
+    "additionalImageCount": 9,
+    "ageRange": {},
+    "dimensions": {
+      "height": 14.1,
+      "width": 26.2,
+      "depth": 7.2
+    },
+    "barcode": {
+      "EAN": "5702017719719",
+      "UPC": "673419400497"
+    },
+    "extendedData": {},
+    "lastUpdated": "2024-07-08T18:04:15.687Z"
+  },
+  {
+    "setID": 50698,
+    "number": "77242",
+    "numberVariant": 1,
+    "name": "Ferrari SF-24 F1 Race Car",
+    "year": 2025,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Formula 1",
+    "category": "Normal",
+    "released": true,
+    "pieces": 275,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/77242-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/77242-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/77242-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 57,
+      "wantedBy": 1426
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 22.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 34.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      }
+    },
+    "rating": 0.0,
+    "reviewCount": 0,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 0,
+    "additionalImageCount": 2,
+    "ageRange": {
+      "min": 10
+    },
+    "dimensions": {},
+    "barcode": {
+      "EAN": "5702017816098",
+      "UPC": "673419405270"
+    },
+    "extendedData": {},
+    "lastUpdated": "2024-11-22T09:17:06.693Z"
+  },
+  {
+    "setID": 50699,
+    "number": "77243",
+    "numberVariant": 1,
+    "name": "Oracle Red Bull Racing RB20 F1 Race Car",
+    "year": 2025,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Formula 1",
+    "category": "Normal",
+    "released": true,
+    "pieces": 251,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/77243-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/77243-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/77243-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 54,
+      "wantedBy": 1413
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 22.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 34.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      }
+    },
+    "rating": 0.0,
+    "reviewCount": 0,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 0,
+    "additionalImageCount": 2,
+    "ageRange": {
+      "min": 18
+    },
+    "dimensions": {},
+    "barcode": {
+      "EAN": "5702017816104",
+      "UPC": "673419405287"
+    },
+    "extendedData": {},
+    "lastUpdated": "2024-11-22T09:19:49.43Z"
+  },
+  {
+    "setID": 50700,
+    "number": "77244",
+    "numberVariant": 1,
+    "name": "Mercedes-AMG PETRONAS W15 F1 Race Car",
+    "year": 2025,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Formula 1",
+    "category": "Normal",
+    "released": true,
+    "pieces": 267,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/77244-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/77244-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/77244-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 46,
+      "wantedBy": 1168
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 22.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 34.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      }
+    },
+    "rating": 0.0,
+    "reviewCount": 0,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 0,
+    "additionalImageCount": 2,
+    "ageRange": {
+      "min": 10
+    },
+    "dimensions": {},
+    "barcode": {
+      "EAN": "5702017816111",
+      "UPC": "673419405294"
+    },
+    "extendedData": {},
+    "lastUpdated": "2024-11-22T09:21:26.033Z"
+  },
+  {
+    "setID": 50701,
+    "number": "77245",
+    "numberVariant": 1,
+    "name": "Aston Martin Aramco F1 AMR24 Race Car",
+    "year": 2025,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Formula 1",
+    "category": "Normal",
+    "released": true,
+    "pieces": 269,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/77245-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/77245-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/77245-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 40,
+      "wantedBy": 1096
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 22.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 34.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      }
+    },
+    "rating": 0.0,
+    "reviewCount": 0,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 0,
+    "additionalImageCount": 2,
+    "ageRange": {
+      "min": 10
+    },
+    "dimensions": {},
+    "barcode": {
+      "EAN": "5702017816128",
+      "UPC": "673419405300"
+    },
+    "extendedData": {},
+    "lastUpdated": "2024-11-22T09:22:35.84Z"
+  },
+  {
+    "setID": 50702,
+    "number": "77246",
+    "numberVariant": 1,
+    "name": "Visa Cash App VCARB 01 F1 Race Car",
+    "year": 2025,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Formula 1",
+    "category": "Normal",
+    "released": true,
+    "pieces": 248,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/77246-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/77246-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/77246-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 43,
+      "wantedBy": 1093
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 22.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 34.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      }
+    },
+    "rating": 0.0,
+    "reviewCount": 0,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 0,
+    "additionalImageCount": 2,
+    "ageRange": {
+      "min": 18
+    },
+    "dimensions": {},
+    "barcode": {
+      "EAN": "5702017816135",
+      "UPC": "673419405317"
+    },
+    "extendedData": {},
+    "lastUpdated": "2024-11-22T09:23:40.773Z"
+  },
+  {
+    "setID": 50703,
+    "number": "77247",
+    "numberVariant": 1,
+    "name": "KICK Sauber F1 Team C44 Race Car",
+    "year": 2025,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Formula 1",
+    "category": "Normal",
+    "released": true,
+    "pieces": 259,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/77247-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/77247-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/77247-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 41,
+      "wantedBy": 1068
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 22.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 34.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      }
+    },
+    "rating": 0.0,
+    "reviewCount": 0,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 0,
+    "additionalImageCount": 2,
+    "ageRange": {
+      "min": 10
+    },
+    "dimensions": {},
+    "barcode": {
+      "EAN": "5702017816142",
+      "UPC": "673419405324"
+    },
+    "extendedData": {},
+    "lastUpdated": "2024-11-22T09:37:53.08Z"
+  },
+  {
+    "setID": 50704,
+    "number": "77248",
+    "numberVariant": 1,
+    "name": "BWT Alpine F1 Team A524 Race Car",
+    "year": 2025,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Formula 1",
+    "category": "Normal",
+    "released": true,
+    "pieces": 258,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/77248-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/77248-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/77248-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 41,
+      "wantedBy": 1083
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 22.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 34.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      }
+    },
+    "rating": 0.0,
+    "reviewCount": 0,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 0,
+    "additionalImageCount": 2,
+    "ageRange": {
+      "min": 10
+    },
+    "dimensions": {},
+    "barcode": {
+      "EAN": "5702017816159",
+      "UPC": "673419405331"
+    },
+    "extendedData": {},
+    "lastUpdated": "2024-11-22T09:39:11.113Z"
+  },
+  {
+    "setID": 50705,
+    "number": "77249",
+    "numberVariant": 1,
+    "name": "Williams Racing FW46 F1 Race Car",
+    "year": 2025,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Formula 1",
+    "category": "Normal",
+    "released": true,
+    "pieces": 263,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/77249-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/77249-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/77249-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 43,
+      "wantedBy": 1131
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 22.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 34.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      }
+    },
+    "rating": 0.0,
+    "reviewCount": 0,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 0,
+    "additionalImageCount": 2,
+    "ageRange": {
+      "min": 10
+    },
+    "dimensions": {},
+    "barcode": {
+      "EAN": "5702017816166",
+      "UPC": "673419405348"
+    },
+    "extendedData": {},
+    "lastUpdated": "2024-11-22T09:40:22.203Z"
+  },
+  {
+    "setID": 50706,
+    "number": "77250",
+    "numberVariant": 1,
+    "name": "MoneyGram Haas F1 Team VF-24 Race Car",
+    "year": 2025,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Formula 1",
+    "category": "Normal",
+    "released": true,
+    "pieces": 242,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/77250-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/77250-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/77250-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 44,
+      "wantedBy": 1082
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 22.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 34.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      }
+    },
+    "rating": 0.0,
+    "reviewCount": 0,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 0,
+    "additionalImageCount": 2,
+    "ageRange": {
+      "min": 10
+    },
+    "dimensions": {},
+    "barcode": {
+      "EAN": "5702017816173",
+      "UPC": "673419405355"
+    },
+    "extendedData": {},
+    "lastUpdated": "2024-11-22T09:41:12.603Z"
+  },
+  {
+    "setID": 50707,
+    "number": "77251",
+    "numberVariant": 1,
+    "name": "McLaren MCL38 F1 Team Race Car",
+    "year": 2025,
+    "theme": "Speed Champions",
+    "themeGroup": "Licensed",
+    "subtheme": "Formula 1",
+    "category": "Normal",
+    "released": true,
+    "pieces": 269,
+    "image": {
+      "thumbnailURL": "https://images.brickset.com/sets/small/77251-1.jpg",
+      "imageURL": "https://images.brickset.com/sets/images/77251-1.jpg"
+    },
+    "bricksetURL": "https://brickset.com/sets/77251-1",
+    "collection": {
+      "owned": false,
+      "wanted": false,
+      "qtyOwned": 0,
+      "rating": 0,
+      "notes": ""
+    },
+    "collections": {
+      "ownedBy": 53,
+      "wantedBy": 1159
+    },
+    "LEGOCom": {
+      "US": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "UK": {
+        "retailPrice": 22.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "CA": {
+        "retailPrice": 34.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      },
+      "DE": {
+        "retailPrice": 26.99,
+        "dateFirstAvailable": "2024-11-22T00:00:00Z"
+      }
+    },
+    "rating": 0.0,
+    "reviewCount": 0,
+    "packagingType": "Box",
+    "availability": "Retail",
+    "instructionsCount": 0,
+    "additionalImageCount": 2,
+    "ageRange": {
+      "min": 10
+    },
+    "dimensions": {},
+    "barcode": {
+      "EAN": "5702017816180",
+      "UPC": "673419405362"
+    },
+    "extendedData": {},
+    "lastUpdated": "2024-11-22T09:42:23.797Z"
+  }
+];
+
+function makeRow (label, value) {
+return dom("tr", {}, [
+                    dom("th", {scope: "row"}, [label]),
+                    dom("td", {}, [value])
+  ]);
+}    
+                    
+      document.addEventListener("DOMContentLoaded", function(event) {
+        const container = document.getElementById("container");
+        data.forEach(function(elmt) {
+          container.appendChild(
+            dom("div", { class: "element" },[
+              dom("img", {src: elmt.image.imageURL, alt:"Image of assembled LEGO set"}),
+              dom("table", {}, [
+                dom("tbody", {}, [
+                  makeRow("Set Name:", elmt.name),
+                  makeRow("Set Price (retail):", elmt.LEGOCom.US.retailPrice ?? "No price available"),
+                  makeRow("Release Year:", elmt.year),
+                  makeRow("Set ID:", elmt.setID) 
+                                  ])
+                                ])
+                              ])
+                             )
+                           })
+                         })
+
+    </script>
+  </head>
+  <table>
+      <tbody>
+        <tr>
+          <th scope="row">Set Name</th>
+          <td>elmt.name</td>
+        </tr>
+        <tr>
+          <th scope="row">Set Price</th>
+          <td>elmt.LEGOCom.US.retailPrice ?? "No price available"</td>
+        </tr>
+        <tr>
+          <th scope="row">Release Year</th>
+          <td>elmt.year</td>
+        </tr>
+        <tr>
+          <th scope="row">Set ID</th>
+          <td>elmt.setID</td>
+        </tr>
+      </tbody>
+  </table>
+</html>
